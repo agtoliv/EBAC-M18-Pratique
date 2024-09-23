@@ -3,7 +3,7 @@ npm init
 "less": "lessc ./src/styles/main.less ./build/styles/main.css",
 npm install --save-dev less
 
-         Diretorio de origem,   diretorio destino,      arquivo principal
+                             Diretorio de origem,   diretorio destino,      arquivo principal
 "less": "less-watch-compiler ./src/styles/ ./build/styles/ main.less",
 
 
