@@ -18,4 +18,8 @@ module.exports = function(grunt){
             }
         }
     })
+
+    grunt.loadNpmTask('grunt-contrib-less');
+
+    grunt.registerTask('build', ['less:production']);
 }
