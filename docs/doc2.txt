@@ -1,0 +1,8 @@
+npm install --save-dev grunt-contrib-watch
+npm install --save-dev grunt-replace
+ npm install --save-dev grunt-contrib-htmlmin
+ npm run grunt htmlmin:dist
+
+ Pre build é a pasta temporaria, pois primeiro minificamos paera depois subistituir, e pra isso precisa de uma pasta temporaria
+
+npm install --save-dev grunt-contrib-clean

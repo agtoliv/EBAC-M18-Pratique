@@ -1,0 +1,6 @@
+npm i -g grunt-cli
+npm init
+npm i --save-dev grunt
+npm install --save-dev grunt-contrib-less
+npm install --save-dev grunt-contrib-sass
+npm install --save-dev grunt-concurrent
