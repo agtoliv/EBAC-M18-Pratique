@@ -5,7 +5,7 @@ module.exports = function(grunt){
         less: {
             development: {
                 files:{
-                    '/dev/styles/main.css': 'src/styles/main.less'
+                    'dev/styles/main.css': 'src/styles/main.less'
                 }
             },
             production: {
@@ -19,7 +19,7 @@ module.exports = function(grunt){
         }
     })
 
-    grunt.loadNpmTask('grunt-contrib-less');
+    grunt.loadNpmTasks('grunt-contrib-less');
 
     grunt.registerTask('build', ['less:production']);
 }
