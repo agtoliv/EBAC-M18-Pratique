@@ -58,11 +58,19 @@ module.exports = function(grunt){
                     }
                 ]
             }
+        },
+        uglify:{
+            target: {
+                files: {
+                    'dist/scripts/main.min.js':'src/scripts/main.js'
+                }
+            }
         }
     })
 
     grunt.loadNpmTasks('grunt-contrib-less');
     grunt.loadNpmTasks('grunt-replace');
+    grunt.loadNpmTasks('grunt-contrib-uglify');
 
-    grunt.registerTask('build', ['less:production', 'replace']);
+    grunt.registerTask('build', ['less:production', 'replace', 'uglify']);
 }
